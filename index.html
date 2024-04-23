@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/5ead8363a9.js" crossorigin="anonymous"></script>
+    <title>Email Marketing</title>
+</head>
+<body>
+
+    <main>
+        <section class="mockup">
+            <img src="./imagem/mockup.svg" alt="Mockup Celular Soluções">
+        </section>
+        
+        <section class="text-mockup">
+            <h2>Chegou o <span>aplicativo</span> que você esperava!</h2>
+            <p class="p-h2">Desfrute de uma interface:</p>
+            <div class="icons-p">
+                <p class="p-um"><i class="fa-regular fa-circle-check"></i>Simples</p>
+                <p class="p-um"><i class="fa-regular fa-circle-check"></i>Moderna</p>
+                <p class="p-um"><i class="fa-regular fa-circle-check"></i>Prática</p>
+            </div>
+
+            <div class="apps">
+                <h2>Baixe Agora!</h2>
+                <div class="cards-apps">
+                    <div class="apple" id="apple">
+                        <i class="fa-brands fa-apple"></i>
+                        <p>Disponivel na <br> <span class="apple-text">App Store</span></p>
+                    </div>
+
+                    <div class="google-play" id="google-play">
+                        <i class="fa-brands fa-google-play"></i>
+                        <p>Disponivel na <br> <span class="apple-text">Google Play</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="apps-mobile">
+        <h2>Baixe Agora!</h2>
+        <div class="cards-apps">
+            <div class="apple" id="apple">
+                <i class="fa-brands fa-apple"></i>
+                <p>Disponivel na <br> <span class="apple-text">App Store</span></p>
+            </div>
+
+            <div class="google-play" id="google-play">
+                <i class="fa-brands fa-google-play"></i>
+                <p>Disponivel na <br> <span class="apple-text">Play Store</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Adiciona evento de clique ao elemento Google Play
+    document.getElementById('google-play').addEventListener('click', function() {
+        // Redireciona para o URL da Google Play Store
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.idealtrends.solucoesindustriais&pli=1';
+    });
+
+    // Adiciona evento de clique ao elemento Apple Store
+    document.getElementById('apple').addEventListener('click', function() {
+        // Redireciona para o URL da Apple Store
+        window.location.href = 'https://apps.apple.com/br/app/solu%C3%A7%C3%B5es-industriais/id6474557020?platform=iphone';
+    });
+</script>
+</html>
